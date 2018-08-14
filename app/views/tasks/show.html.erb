@@ -1,0 +1,8 @@
+<h1>Do you think the task below is completed ?</h1>
+
+<h2><%= @task.title %></h2>
+
+
+<p> <%= link_to "changer", edit_path(@task.id) %> </p>
+
+<p><%= link_to "Delete", task_path(@task.id), method: :delete %> </p>
